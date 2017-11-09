@@ -1,0 +1,26 @@
+{
+  "name": "gosub",
+  "version": "1.0.0",
+  "description": "Run pkg.scripts subtasks in a runner-agnostic way (npm/yarn, whichever launched the main script)",
+  "bin": {
+    "gosub": "./gosub.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pygy/gosub.git"
+  },
+  "keywords": [
+    "npm",
+    "yarn",
+    "run",
+    "pkg.scripts",
+    "fork",
+    "launch"
+  ],
+  "author": "Pierre-Yves Gérardy",
+  "license": "Romantic WTF",
+  "bugs": {
+    "url": "https://github.com/pygy/gosub/issues"
+  },
+  "homepage": "https://github.com/pygy/gosub#readme"
+}

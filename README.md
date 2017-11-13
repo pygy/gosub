@@ -10,9 +10,9 @@ Given the following `package.json`
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "task": "gosub subtask; gosub othertask",
-    "subtask": "echo \"====>> $npm_config_user_agent <<====\"",
-    "othertask":"echo done"
+    "task": "gosub subtask && gosub print done",
+    "subtask": "echo ====>> unix: $npm_config_user_agent win: %npm_config_user_agent% <<====",
+    "print":"echo"
   },
   "devDependencies": {
     "gosub": "1.0.0"

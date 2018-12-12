@@ -1,6 +1,6 @@
 {
   "name": "gosub",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Run pkg.scripts subtasks in a runner-agnostic way (npm/yarn, whichever launched the main script)",
   "bin": {
     "gosub": "./gosub.js"

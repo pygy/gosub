@@ -54,6 +54,18 @@ The script works for my own use, but I'm not used to writing command line utilit
 
 Yup, in BASIC, `gosub` is `goto`'s smarter brother. Waving at all of you who learned to code on 8/16 bits computers. Oh, sorry... waving at the others as well :-).
 
+## History
+
+### v1.1.0
+
+- Use `child_process.spawn` instead of `.exec` to prevent the parent from exiting early.
+- Have the child inherit the `stdio` streams rather than piping them manually.
+- Also pipe `stdin` to the children processes.
+
+### v1.0.0
+
+initial release
+
 ## License?
 
 Romantic WTF!

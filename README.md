@@ -42,6 +42,10 @@ In other words, if the main task is launched with `npm run` the sub tasks will b
 
 This makes your `pkg.scripts` runner agnostic.
 
+## What about other commands beyond `run`?
+
+You can use `gosub --raw action`. So `gosub --raw install` will run `npm install` (re. `bun`, `yarn`, etc...).
+
 ## Why not use `$_ run subtask`?
 
 It doesn't work on Windows (although it will save you tens if not hundreds of milliseconds on *nix). If it turns out there's a native, cross-platform method to achieve what `gosub` does please chime in in the issues.
@@ -52,9 +56,13 @@ The script works for my own use, but I'm not used to writing command line utilit
 
 ## Is `gosub` a BASIC thing?
 
-Yup, in BASIC, `gosub` is `goto`'s smarter brother. Waving at all of you who learned to code on 8/16 bits computers. Oh, sorry... waving at the others as well :-).
+\*Waves at all of you who learned to code on 8/16 bits computers\*.
 
 ## History
+
+### v2.0.0
+
+- Add a `--raw` option to launch other commands `gosub --raw install` will launch `npm install` (or `bun`, `yarn` depending on what you're using) .
 
 ### v1.1.0
 

@@ -5,7 +5,8 @@
 // - this very script
 var args = process.argv.slice(2)
 
-args.unshift("run")
+if (args[0] === '--raw') args.shift()
+else args.unshift("run")
 
 // the npm_config_user_agent looks like "npm/x.y.z ..." or "yarn/x.y.z ..."
 var command = process.env.npm_config_user_agent.replace(/\/.*/, '')
